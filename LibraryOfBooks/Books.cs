@@ -2,9 +2,7 @@
 
 namespace LibraryOfBooks
 {
-    public class Books
-    {
-        public class Book
+       public class Books
         {
             string title;
             string author;
@@ -16,7 +14,7 @@ namespace LibraryOfBooks
             public int PageNumber { get; set; }
             public string Isbn13 { get; set; }
 
-            public Book()
+            public Books(string title, string author, int PageNumber, string isbn13)
             {
                 Title = title;
                 Author = author;
@@ -30,4 +28,4 @@ namespace LibraryOfBooks
 
         }
     }
-}
+
