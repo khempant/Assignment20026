@@ -11,10 +11,23 @@ namespace LibraryOfBooks
             int pageNumber;
             string isbn13;
 
-            public string Ttle { get => title; }
-            public string Author { get => author; }
-            public int PageNumber { get => pageNumber; }
-            public string Isbn13 { get => Isbn13; }
+            public string Title { get; set; }
+            public string Author { get; set; }
+            public int PageNumber { get; set; }
+            public string Isbn13 { get; set; }
+
+            public Book()
+            {
+                Title = title;
+                Author = author;
+                PageNumber = pageNumber;
+                Isbn13 = isbn13;
+            }
+            public override string ToString()
+            {
+                return $"{Title}-{Author}-{PageNumber}-{Isbn13}";
+            }
 
         }
     }
+}
